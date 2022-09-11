@@ -1,3 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-origin: border-box;
+    box-sizing: border-box;
+}
+
+
 html {
     background-color: brown;
+}
+
+body {
+    display: flex;
+    height: 90vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-area {
+    position: relative;
+    display: flex;
+    width: 75%;
+    height: 40rem;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-area {
+    position: relative;
+    width: 20rem;
+    height: 25rem;
+    background-color: blueviolet;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    clear: both;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+ul li {
+    margin: 20px 0;
 }

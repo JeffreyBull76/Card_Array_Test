@@ -38,6 +38,18 @@ body {
     text-align: center;
 }
 
+#btndiv {
+    display: flex;
+}
+
+button {
+    box-sizing: content-box;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: black;
+}
+
 img {
     display: block;
     margin: auto;

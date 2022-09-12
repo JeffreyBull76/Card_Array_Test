@@ -29,13 +29,24 @@ body {
     align-items: center;
 }
 
-#card-area {
+#card-area1 {
     position: relative;
     width: 20rem;
     height: 25rem;
     background-color: blueviolet;
     border-radius: 10px;
     text-align: center;
+    margin: 10px;
+}
+
+#card-area2 {
+    position: relative;
+    width: 20rem;
+    height: 25rem;
+    background-color: blueviolet;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
 }
 
 #btndiv {
@@ -64,4 +75,5 @@ ul {
 
 ul li {
     margin: 20px 0;
+    cursor: pointer;
 }

@@ -40,6 +40,7 @@ body {
 
 #btndiv {
     display: flex;
+    align-self: flex-end;
 }
 
 button {

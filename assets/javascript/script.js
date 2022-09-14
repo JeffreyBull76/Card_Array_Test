@@ -118,33 +118,74 @@ function playCards (event) {
 
 playCards();
 
-let fieldP = document.getElementById('kpower1');
-let fieldC = document.getElementById('kpower2');
+let fieldP 
+let fieldC
+
+let fieldP1 = document.getElementById('kpower1');
+let fieldC1 = document.getElementById('kpower2');
+
+let fieldP2 = document.getElementById('ffactor1');
+let fieldC2 = document.getElementById('ffactor2');
+
+let fieldP3 = document.getElementById('hrating1');
+let fieldC3 = document.getElementById('hrating2');
+
+let fieldP4 = document.getElementById('pstrength1');
+let fieldC4 = document.getElementById('pstrength2');
+
+function setKpowerField() {
+    fieldP = fieldP1.innerHTML;
+    fieldC = fieldC1.innerHTML;
+    battle();
+};
+
+function setFfactorField() {
+    fieldP = fieldP2.innerHTML;
+    fieldC = fieldC2.innerHTML;
+    battle();
+};
+
+function setHratingField() {
+    fieldP = fieldP3.innerHTML;
+    fieldC = fieldC3.innerHTML;
+    battle();
+};
+
+function setPstrengthField() {
+    fieldP = fieldP4.innerHTML;
+    fieldC = fieldC4.innerHTML;
+    battle();
+};
+
 function battle() {
     if (playerDeck.length === 0) {
         console.log('game over');
     } else {
-        if (fieldP.innerText > fieldC.innerText) {
+        if (fieldP > fieldC) {
         console.log('win')
         playerWins.push(playerDeck[0]);
         playerWins.push(computerDeck[0]);
         playerDeck.shift();
         computerDeck.shift();
         playCards();
-        console.log(playerDeck);
-    } else if(fieldP.innerText < fieldC.innerText) {
+        document.getElementById('pscore').textContent = playerWins.length;
+    } else if(fieldP < fieldC) {
         console.log('lose')
         computerWins.push(playerDeck[0]);
         computerWins.push(computerDeck[0]);
         playerDeck.shift();
         computerDeck.shift();
-        playCards();       
+        playCards();   
+        document.getElementById('cscore').textContent = computerWins.length;    
     }
-}
-};
+
+}};
 
 //battle function listener
-fieldP.addEventListener('click', battle);
+fieldP1.addEventListener('click', setKpowerField);
+fieldP2.addEventListener('click', setFfactorField);
+fieldP3.addEventListener('click', setHratingField);
+fieldP4.addEventListener('click', setPstrengthField);
 
 
 //next game button reloads the page

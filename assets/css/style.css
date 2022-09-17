@@ -49,6 +49,13 @@ body {
     margin: 10px;
 }
 
+#message-area {
+    position: absolute;
+    top: 50px;
+    margin: auto;
+    z-index: 2;
+}
+
 #btndiv {
     display: flex;
     align-self: flex-end;

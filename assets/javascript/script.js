@@ -338,12 +338,15 @@ const computerWins =[];
 
 shuffle(card);  
 
-let playerDeck = card.slice(0, 20)
-let computerDeck = card.slice(20, 40)
+let playerDeck = card.slice(0, 20);
+let computerDeck = card.slice(20, 40);
+
 
 function playCards (event) {
     let activePlayerCard = playerDeck[0];
     let activeComputerCard = computerDeck[0];
+
+    document.getElementById('message-area').innerText = '';
 
     if (playerDeck.length === 0) {
         console.log('game over');
@@ -388,8 +391,8 @@ function playCards (event) {
 
 playCards();
 
-let fieldP 
-let fieldC
+let fieldP; 
+let fieldC;
 
 let fieldP1 = document.getElementById('kpower1');
 let fieldC1 = document.getElementById('kpower2');
@@ -412,28 +415,51 @@ function setKpowerField() {
     document.getElementById('ffactor2').hidden = false;
     document.getElementById('hrating2').hidden = false;
     document.getElementById('pstrength2').hidden = false;
-    setTimeout(battle, 1200);
+    battle();
 };
 
 function setFfactorField() {
     fieldP = fieldP2.innerHTML;
     fieldC = fieldC2.innerHTML;
+    document.getElementById('name2').hidden = false;
+    document.getElementById('card-area2').children[3].style.visibility = "visible";
+    document.getElementById('kpower2').hidden = false;
+    document.getElementById('ffactor2').hidden = false;
+    document.getElementById('hrating2').hidden = false;
+    document.getElementById('pstrength2').hidden = false;
     battle();
 };
 
 function setHratingField() {
     fieldP = fieldP3.innerHTML;
     fieldC = fieldC3.innerHTML;
+    document.getElementById('name2').hidden = false;
+    document.getElementById('card-area2').children[3].style.visibility = "visible";
+    document.getElementById('kpower2').hidden = false;
+    document.getElementById('ffactor2').hidden = false;
+    document.getElementById('hrating2').hidden = false;
+    document.getElementById('pstrength2').hidden = false;
     battle();
 };
 
 function setPstrengthField() {
     fieldP = fieldP4.innerHTML;
     fieldC = fieldC4.innerHTML;
+    document.getElementById('name2').hidden = false;
+    document.getElementById('card-area2').children[3].style.visibility = "visible";
+    document.getElementById('kpower2').hidden = false;
+    document.getElementById('ffactor2').hidden = false;
+    document.getElementById('hrating2').hidden = false;
+    document.getElementById('pstrength2').hidden = false;
     battle();
 };
 
 function battle() {
+    fieldP1.removeEventListener('click', setKpowerField);
+    fieldP2.removeEventListener('click', setFfactorField);
+    fieldP3.removeEventListener('click', setHratingField);
+    fieldP4.removeEventListener('click', setPstrengthField);
+    
     if (playerDeck.length === 0) {
         console.log('game over');
     } else {
@@ -443,26 +469,45 @@ function battle() {
         playerWins.push(computerDeck[0]);
         playerDeck.shift();
         computerDeck.shift();
-        playCards();
+        document.getElementById('message-area').innerText = 'Winner... next card';
+        setTimeout(playCards, 1500);
+
         document.getElementById('pscore').textContent = playerWins.length;
-    } else if(fieldP < fieldC) {
+    } else if (fieldP < fieldC) {
         console.log('lose')
         computerWins.push(playerDeck[0]);
         computerWins.push(computerDeck[0]);
         playerDeck.shift();
-        computerDeck.shift();
-        playCards();   
-        document.getElementById('cscore').textContent = computerWins.length;    
-    }
+        computerDeck.shift();   
+        document.getElementById('message-area').innerText = 'Loser... next card';
+        setTimeout(playCards, 1500);
 
+        document.getElementById('cscore').textContent = computerWins.length;    
+    } else if (fieldP == fieldC) {
+        playerWins.push(playerDeck[0]);
+        computerWins.push(computerDeck[0]);
+        playerDeck.shift();
+        computerDeck.shift(); 
+        document.getElementById('message-area').innerText = 'Draw... next card';
+        setTimeout(playCards, 1500);
+
+        document.getElementById('pscore').textContent = playerWins.length;
+        document.getElementById('cscore').textContent = computerWins.length;
+    }
+    
+    setTimeout(addListeners, 1500);
 }};
 
-//battle function listener
-fieldP1.addEventListener('click', setKpowerField);
-fieldP2.addEventListener('click', setFfactorField);
-fieldP3.addEventListener('click', setHratingField);
-fieldP4.addEventListener('click', setPstrengthField);
 
+//battle function listener
+function addListeners () {
+    fieldP1.addEventListener('click', setKpowerField);
+    fieldP2.addEventListener('click', setFfactorField);
+    fieldP3.addEventListener('click', setHratingField);
+    fieldP4.addEventListener('click', setPstrengthField);
+}
+
+addListeners();
 
 //next game button reloads the page
 function nextGame(event) {
@@ -475,6 +520,3 @@ function nextGame(event) {
 
 let myButton = document.getElementById('next-game');
 myButton.addEventListener('click', nextGame);
-
-
-

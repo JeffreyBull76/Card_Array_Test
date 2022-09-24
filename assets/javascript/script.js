@@ -166,7 +166,7 @@ const card = [{
 },
 {
     name: 'Angela',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 78,
     ffactor: 74,
     hrating: 70,
@@ -174,7 +174,7 @@ const card = [{
 },
 {
     name: 'Argentos Demons',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 75,
     ffactor: 80,
     hrating: 74,
@@ -182,7 +182,7 @@ const card = [{
 },
 {
     name: 'Zombie Flesh Eaters',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 83,
     ffactor: 86,
     hrating: 77,
@@ -190,7 +190,7 @@ const card = [{
 },
 {
     name: 'Pinhead',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 85,
     ffactor: 87,
     hrating: 92,
@@ -198,7 +198,7 @@ const card = [{
 },
 {
     name: 'Leatherface',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 74,
     ffactor: 86,
     hrating: 92,
@@ -206,7 +206,7 @@ const card = [{
 },
 {
     name: 'Tetsuo',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 72,
     ffactor: 64,
     hrating: 79,
@@ -214,7 +214,7 @@ const card = [{
 },
 {
     name: 'Sadako',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 79,
     ffactor: 90,
     hrating: 89,
@@ -222,7 +222,7 @@ const card = [{
 },
 {
     name: 'Belial',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 61,
     ffactor: 64,
     hrating: 86,
@@ -230,7 +230,7 @@ const card = [{
 },
 {
     name: 'The Red Death',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 76,
     ffactor: 72,
     hrating: 82,
@@ -238,7 +238,7 @@ const card = [{
 },
 {
     name: 'Dr Phibes',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 82,
     ffactor: 79,
     hrating: 66,
@@ -246,7 +246,7 @@ const card = [{
 },
 {
     name: 'Hannibal Lecter',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 87,
     ffactor: 73,
     hrating: 76,
@@ -254,7 +254,7 @@ const card = [{
 },
 {
     name: 'Pumpkinhead',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 77,
     ffactor: 68,
     hrating: 59,
@@ -262,7 +262,7 @@ const card = [{
 },
 {
     name: 'The Blob',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 83,
     ffactor: 74,
     hrating: 67,
@@ -270,7 +270,7 @@ const card = [{
 },
 {
     name: 'Hitcher',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 82,
     ffactor: 66,
     hrating: 79,
@@ -278,7 +278,7 @@ const card = [{
 },
 {
     name: 'Society',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 71,
     ffactor: 72,
     hrating: 61,
@@ -286,7 +286,7 @@ const card = [{
 },
 {
     name: 'Blair Witch',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 65,
     ffactor: 87,
     hrating: 83,
@@ -294,7 +294,7 @@ const card = [{
 },
 {
     name: 'Pennywise',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 83,
     ffactor: 91,
     hrating: 90,
@@ -302,7 +302,7 @@ const card = [{
 },
 {
     name: 'Body Snatchers',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 76,
     ffactor: 81,
     hrating: 78,
@@ -310,7 +310,7 @@ const card = [{
 },
 {
     name: 'Wish Master',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 80,
     ffactor: 78,
     hrating: 68,
@@ -318,7 +318,7 @@ const card = [{
 },
 {
     name: 'Driller Killer',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 77,
     ffactor: 72,
     hrating: 83,
@@ -326,7 +326,7 @@ const card = [{
 },
 {
     name: 'Us',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 81,
     ffactor: 77,
     hrating: 88,
@@ -334,7 +334,7 @@ const card = [{
 },
 {
     name: 'Jigsaw',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: "assets/images/Test_Img1.png",
     kpower: 83,
     ffactor: 68,
     hrating: 79,
@@ -396,7 +396,10 @@ function playCards (event) {
     } else {
 
         document.getElementById('name1').innerText = activePlayerCard.name;
-        document.getElementById('card-area1').children[3].outerHTML = activePlayerCard.image;
+        document.getElementById('card-area1').children[3].outerHTML = document.getElementById('card-area1').children[3].outerHTML = `<picture> 
+        <source media="(max-width: 799px)" srcset=${activePlayerCard.image} width="50" height="50">
+        <img src=${activePlayerCard.image} alt="working resize test" width="100" height="100">
+        </picture>`;
         document.getElementById('kpower1').innerText = activePlayerCard.kpower;
         document.getElementById('ffactor1').innerText = activePlayerCard.ffactor;
         document.getElementById('hrating1').innerText = activePlayerCard.hrating;
@@ -404,7 +407,10 @@ function playCards (event) {
     
         document.getElementById('name2').innerText = activeComputerCard.name;
         document.getElementById('name2').hidden = true;
-        document.getElementById('card-area2').children[3].outerHTML = activeComputerCard.image;
+        document.getElementById('card-area2').children[3].outerHTML = document.getElementById('card-area1').children[3].outerHTML = `<picture> 
+        <source media="(max-width: 799px)" srcset=${activeComputerCard.image} width="50" height="50">
+        <img src=${activeComputerCard.image} alt="working resize test" width="100" height="100">
+        </picture>`;
         document.getElementById('card-area2').children[3].style.visibility = "hidden";
         document.getElementById('kpower2').innerText = activeComputerCard.kpower;
         document.getElementById('kpower2').hidden = true;

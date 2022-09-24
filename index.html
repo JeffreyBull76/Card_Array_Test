@@ -54,12 +54,12 @@
         <div id="btndiv">
             <button type="button" id="next-game">Next Game</button>
         </div>
-        <img
-  srcset="assets/images/Test_Img1.png 50w, assets/images/Test_Img2.png 50w"
-  sizes="(max-width: 600px) 50px,
-         50px"
-  src="assets/images/Test_Img2.png"
-  alt="resizer test" />
+        <br>
+        <picture>
+            <source media="(max-width: 799px)" srcset="assets/images/Test_Img1.png">
+            <source media="(min-width: 800px)" srcset="assets/images/Test_Img2.png">
+            <img src="assets/images/Test_Img2.png" alt="working resize test">
+        </picture>
     </div>
     
     <script src="assets/javascript/script.js"></script>

@@ -1,6 +1,9 @@
 const card = [{
     name: 'Dracula',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: `<picture>
+            <source media="(max-width: 799px)" srcset="assets/images/Test_Img1.png" width="50" height="50">
+            <img src="assets/images/Test_Img1.png" alt="working resize test" width="100" height="100" id="image1">
+            </picture>`,
     kpower: 88,
     ffactor: 78,
     hrating: 98,
@@ -8,7 +11,10 @@ const card = [{
 },
 {
     name: 'Jason Vorhees',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: `<picture>
+            <source media="(max-width: 799px)" srcset="assets/images/Test_Img2.png" width="50" height="50">
+            <img src="assets/images/Test_Img2.png" alt="working resize test" width="100" height="100" id="image1">
+            </picture>`,
     kpower: 94,
     ffactor: 83,
     hrating: 88,
@@ -16,7 +22,10 @@ const card = [{
 },
 {
     name: 'Michael Myers',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: `<picture>
+            <source media="(max-width: 799px)" srcset="assets/images/Test_Img1.png" width="50" height="50">
+            <img src="assets/images/Test_Img1.png" alt="working resize test" width="100" height="100" id="image1">
+            </picture>`,
     kpower: 96,
     ffactor: 89,
     hrating: 94,
@@ -24,7 +33,10 @@ const card = [{
 },
 {
     name: 'Freddy Krueger',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: `<picture>
+            <source media="(max-width: 799px)" srcset="assets/images/Test_Img2.png" width="50" height="50">
+            <img src="assets/images/Test_Img2.png" alt="working resize test" width="100" height="100" id="image1">
+            </picture>`,
     kpower: 97,
     ffactor: 75,
     hrating: 95,
@@ -32,7 +44,10 @@ const card = [{
 },
 {
     name: 'Candyman',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: `<picture>
+            <source media="(max-width: 799px)" srcset="assets/images/Test_Img1.png" width="50" height="50">
+            <img src="assets/images/Test_Img1.png" alt="working resize test" width="100" height="100" id="image1">
+            </picture>`,
     kpower: 93,
     ffactor: 91,
     hrating: 85,
@@ -40,7 +55,10 @@ const card = [{
 },
 {
     name: 'Chucky',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: `<picture>
+            <source media="(max-width: 799px)" srcset="assets/images/Test_Img2.png" width="50" height="50">
+            <img src="assets/images/Test_Img2.png" alt="working resize test" width="100" height="100" id="image1">
+            </picture>`,
     kpower: 73,
     ffactor: 65,
     hrating: 71,
@@ -48,7 +66,10 @@ const card = [{
 },
 {
     name: 'Leprechaun',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: `<picture>
+            <source media="(max-width: 799px)" srcset="assets/images/Test_Img1.png" width="50" height="50">
+            <img src="assets/images/Test_Img1.png" alt="working resize test" width="100" height="100" id="image1">
+            </picture>`,
     kpower: 79,
     ffactor: 62,
     hrating: 64,
@@ -56,7 +77,10 @@ const card = [{
 },
 {
     name: 'Alien',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: `<picture>
+            <source media="(max-width: 799px)" srcset="assets/images/Test_Img2.png" width="50" height="50">
+            <img src="assets/images/Test_Img2.png" alt="working resize test" width="100" height="100" id="image1">
+            </picture>`,
     kpower: 97,
     ffactor: 77,
     hrating: 91,
@@ -64,7 +88,10 @@ const card = [{
 },
 {
     name: 'Scanners',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: `<picture>
+            <source media="(max-width: 799px)" srcset="assets/images/Test_Img1.png" width="50" height="50">
+            <img src="assets/images/Test_Img1.png" alt="working resize test" width="100" height="100" id="image1">
+            </picture>`,
     kpower: 86,
     ffactor: 64,
     hrating: 62,
@@ -72,7 +99,10 @@ const card = [{
 },
 {
     name: 'The Thing',
-    image: `<img src="assets/images/Test_Img1.png" alt="" srcset="">`,
+    image: `<picture>
+            <source media="(max-width: 799px)" srcset="assets/images/Test_Img2.png" width="50" height="50">
+            <img src="assets/images/Test_Img2.png" alt="working resize test" width="100" height="100" id="image1">
+            </picture>`,
     kpower: 99,
     ffactor: 91,
     hrating: 83,

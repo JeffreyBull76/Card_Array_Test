@@ -366,7 +366,7 @@ function playCards (event) {
     } else {
 
         document.getElementById('name1').innerText = activePlayerCard.name;
-        document.getElementById('card-area1').children[3].outerHTML = document.getElementById('card-area1').children[3].outerHTML = `<picture> 
+        document.getElementById('card-area1').children[3].outerHTML = `<picture> 
         <source media="(max-width: 799px)" srcset=${activePlayerCard.image} width="50" height="50">
         <img src=${activePlayerCard.image} alt="working resize test" width="100" height="100">
         </picture>`;
@@ -377,7 +377,7 @@ function playCards (event) {
     
         document.getElementById('name2').innerText = activeComputerCard.name;
         document.getElementById('name2').hidden = true;
-        document.getElementById('card-area2').children[3].outerHTML = document.getElementById('card-area1').children[3].outerHTML = `<picture> 
+        document.getElementById('card-area2').children[3].outerHTML = `<picture> 
         <source media="(max-width: 799px)" srcset=${activeComputerCard.image} width="50" height="50">
         <img src=${activeComputerCard.image} alt="working resize test" width="100" height="100">
         </picture>`;
